@@ -1,16 +1,8 @@
+import { Profile } from "components/Profile";
+import data from "components/user.json"
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <Profile key={data.username} profile= {data} />
   );
 };
