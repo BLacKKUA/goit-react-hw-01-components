@@ -12,9 +12,9 @@ export const Profile = ({ profile: { username, tag, location: loca, avatar, stat
          <Wrapper>
             <ProfileDetail>
                <img src={avatar} alt="avatar" width={100} heigh={100} />
-               <h2>{username}</h2>
-               <p>@{tag}</p>
-               <p>{loca}</p>
+               <p className="name">{username}</p>
+               <p className="tag">@{tag}</p>
+               <p className="location">{loca}</p>
             </ProfileDetail>
             <ProfileStats>
                <Stats stats="Followers" text={`${followers}`} />
