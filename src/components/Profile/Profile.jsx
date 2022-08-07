@@ -9,7 +9,7 @@ const Stats = ({stats ,text}) => {
 
 export const Profile = ({ profile: { username, tag, location: loca, avatar, stats: { followers, views, likes } } }) => {
       return (
-         <Wrapper>
+         <Wrapper key={username}>
             <ProfileDetail>
                <img src={avatar} alt="avatar" width={100} heigh={100} />
                <p className="name">{username}</p>

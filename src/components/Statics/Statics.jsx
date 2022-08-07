@@ -14,7 +14,7 @@ const Static = ({ staticData }) => {
 export const Statics = ({ title, staticsData }) => {
    return (
       <section className="statistics">
-         <MainTitle>{title}</MainTitle>
+         {title ? <MainTitle>{title}</MainTitle> : ''}
          <UlInfo>
             {staticsData.map((staticData) => {
                return(
